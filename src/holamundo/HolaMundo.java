@@ -18,19 +18,24 @@ public class HolaMundo {
     public static void main(String[] args) {
         // TODO code application logic here
        java.util.Scanner datos = new java.util.Scanner(System.in);
-        double a = 0;
-        double b = 0; 
-        double c = 0;
+        double x ;
+        double y ; 
+        double z ;
         
         System.out.println("Ingrese el valor de A");
-        a = datos.nextInt();
+        x = datos.nextInt();
        
         System.out.println("Ingrese el valor de B");
-        b = datos.nextInt();
-   
+        y = datos.nextInt();
+        
         System.out.println("Ingrese el valor de C");
-        c = datos.nextInt();
+        z = datos.nextInt();
    
+        mayor(x,y,z);
+        
+    }
+        public static int mayor(double a, double b, double c){
+        
         if (a > b && a > c) {
         System.out.println("El Mayor es" + a);
         }
@@ -38,9 +43,10 @@ public class HolaMundo {
         System.out.println("El Mayor es" + b);
         }
         else if (c > a && c > b) {
-        System.out.println("El Mayor es" + b);
+        System.out.println("El Mayor es" + c);
         }
         
-    }
+    return 0;
     
+}
 }
